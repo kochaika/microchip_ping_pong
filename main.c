@@ -24,6 +24,9 @@ unsigned int upRacketCentre;
 unsigned int upRacketIndent;
 unsigned int upRacketWidth;
 
+unsigned int downRacketCentre;
+unsigned int downRacketIndent;
+unsigned int downRacketWidth;
 
 void Int_Handle (void);
 
@@ -97,6 +100,7 @@ void Init(void)
 //void newGame();
 void drawBorders();
 void drawUpRacket();
+void drawDownRacket();
 void buttonsHandler();
 
 void main (void)
@@ -109,6 +113,7 @@ void main (void)
 
 	drawBorders();
 	drawUpRacket();
+	drawDownRacket();
 	
 	while(1){
 	buttonsHandler();
@@ -116,7 +121,7 @@ void main (void)
 
 }
 
-void drawBorders()
+void drawBorders()  // границы дисплея
 {
 
 Disp_Line(leftBorder,upBorder,rightBorder,upBorder,colorBlack); //upper border
@@ -126,14 +131,52 @@ Disp_Line(leftBorder,downBorder,rightBorder,downBorder,colorBlack); //down borde
 
 }
 
-void drawUpRacket()
+void drawUpRacket() // отрисовка рокетки верхней
 {
 	Disp_Line(upRacketCentre - upRacketWidth/2,upRacketIndent,upRacketCentre + upRacketWidth/2,upRacketIndent,colorBlack); //upper border
 }
 
-void clearUpRacket()
+void clearUpRacket() // зачистка
 {
 	Disp_Line(upRacketCentre - upRacketWidth/2,upRacketIndent,upRacketCentre + upRacketWidth/2,upRacketIndent,colorWhite); //upper border
+}
+
+void drawDownRacket() // отрисовка рокетки нижней
+{
+	Disp_Line(downRacketCentre - downRacketWidth/2,downRacketIndent,downRacketCentre + downRacketWidth/2,downRacketIndent,colorBlack); //upper border
+}
+
+void clearDownRacket() // зачистка
+{
+	Disp_Line(downRacketCentre - downRacketWidth/2,downRacketIndent,downRacketCentre + downRacketWidth/2,downRacketIndent,colorWhite); //upper border
+}
+
+void moveUpRacketRight()
+{
+	clearUpRacket();
+	changeUpRacketCoords(4);
+	drawUpRacket();	
+}
+
+void moveUpRacketLeft()
+{
+	clearUpRacket();
+	changeUpRacketCoords(-4);
+	drawUpRacket();
+}
+
+void moveDownRacketRight()
+{
+	clearDownRacket();
+	changeDownRacketCoords(4);
+	drawDownRacket();	
+}
+
+void moveDownRacketLeft()
+{
+	clearDownRacket();
+	changeDownRacketCoords(-4);
+	drawDownRacket();
 }
 
 void changeUpRacketCoords(int val)
@@ -154,34 +197,36 @@ void changeUpRacketCoords(int val)
 	}
 }
 
-void moveUpRacketRight()
+void changeDownRacketCoords(int val)
 {
-	clearUpRacket();
-	changeUpRacketCoords(4);
-	drawUpRacket();	
+	if(val>0) //right
+	{
+		if(downRacketCentre + downRacketWidth/2 + val > rightBorder)
+			downRacketCentre = rightBorder - downRacketWidth/2 - 1;
+		else
+			downRacketCentre += val;
+	}
+	else //left
+	{
+		if(downRacketCentre - downRacketWidth/2 + val < leftBorder)
+			downRacketCentre = leftBorder + downRacketWidth/2 + 1;
+		else
+			downRacketCentre += val;
+	}
 }
-
-void moveUpRacketLeft()
-{
-	clearUpRacket();
-	changeUpRacketCoords(-4);
-	drawUpRacket();
-}
-	
-	
 
 void buttonsHandler()
 {
 	unsigned char scan = ~BUTTONS_PORT & 0b00111111;
 	if(scan & 0b00000010)
 		{
-			Delay10KTCYx (KEY_DELAY);
+			
 			//moveLeft();
 			moveUpRacketLeft();
 		}
 	if(scan & 0b00100000)
 		{
-			Delay10KTCYx (KEY_DELAY);
+			//Delay10KTCYx (KEY_DELAY);
 			//moveRight();
 			moveUpRacketRight();
 		}
@@ -189,11 +234,13 @@ void buttonsHandler()
 		{
 			//Delay10KTCYx (KEY_DELAY);
 			//moveDown();
+			moveDownRacketLeft();
 		}
 	if(scan & 0b00000100)
 		{
 			//Delay10KTCYx (KEY_DELAY);
 			//moveUp();
+			moveDownRacketRight();
 		}
 	if(scan & 0b00001000)
 		{
@@ -205,6 +252,8 @@ void buttonsHandler()
 			//Delay10KTCYx (KEY_DELAY);
 			//setFlag();
 		}	
+	if(scan > 0)
+		Delay10KTCYx (KEY_DELAY);
 }
 
 

@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Wed Feb 08 23:19:10 2017
+Linker Map File - Created Thu Feb 09 00:04:06 2017
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -10,27 +10,27 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                    .cinit    romdata   0x00000e    program   0x00001a
               .code_LCD.o       code   0x000028    program   0x00110e
            .romdata_LCD.o    romdata   0x001136    program   0x000710
-             .code_main.o       code   0x001846    program   0x000458
-                     PROG       code   0x001c9e    program   0x0000ce
-               _cinit_scn       code   0x001d6c    program   0x00009e
-           .code_EEPROM.o       code   0x001e0a    program   0x000056
-                   STDLIB       code   0x001e60    program   0x00003c
-             D10KTCYXCODE       code   0x001e9c    program   0x00002e
-                    .code       code   0x001eca    program   0x000020
-             _startup_scn       code   0x001eea    program   0x00001c
-                   STRING       code   0x001f06    program   0x00001c
-              D10TCYXCODE       code   0x001f22    program   0x000016
-              SEED_DATA_i    romdata   0x001f38    program   0x000002
-        .romdata___init.o    romdata   0x001f3a    program   0x000000
-        .romdata_EEPROM.o    romdata   0x001f3a    program   0x000000
-          .romdata_main.o    romdata   0x001f3a    program   0x000000
-          .idata_main.o_i    romdata   0x001f3a    program   0x000012
-         .romdata_c018i.o    romdata   0x001f3a    program   0x000000
-           .idata_LCD.o_i    romdata   0x001f4c    program   0x000000
-        .idata_EEPROM.o_i    romdata   0x001f4c    program   0x000000
-        .idata___init.o_i    romdata   0x001f4c    program   0x000000
-            .code_c018i.o       code   0x001f4c    program   0x000000
-         .idata_c018i.o_i    romdata   0x001f4c    program   0x000000
+             .code_main.o       code   0x001846    program   0x0006ae
+                     PROG       code   0x001ef4    program   0x0000ce
+               _cinit_scn       code   0x001fc2    program   0x00009e
+           .code_EEPROM.o       code   0x002060    program   0x000056
+                   STDLIB       code   0x0020b6    program   0x00003c
+             D10KTCYXCODE       code   0x0020f2    program   0x00002e
+                    .code       code   0x002120    program   0x000020
+             _startup_scn       code   0x002140    program   0x00001c
+                   STRING       code   0x00215c    program   0x00001c
+              D10TCYXCODE       code   0x002178    program   0x000016
+              SEED_DATA_i    romdata   0x00218e    program   0x000002
+        .romdata___init.o    romdata   0x002190    program   0x000000
+        .romdata_EEPROM.o    romdata   0x002190    program   0x000000
+          .romdata_main.o    romdata   0x002190    program   0x000000
+          .idata_main.o_i    romdata   0x002190    program   0x000018
+         .romdata_c018i.o    romdata   0x002190    program   0x000000
+           .idata_LCD.o_i    romdata   0x0021a8    program   0x000000
+        .idata_EEPROM.o_i    romdata   0x0021a8    program   0x000000
+        .idata___init.o_i    romdata   0x0021a8    program   0x000000
+            .code_c018i.o       code   0x0021a8    program   0x000000
+         .idata_c018i.o_i    romdata   0x0021a8    program   0x000000
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -40,17 +40,17 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                  .tmpdata      udata   0x000014       data   0x00000e
                 DELAYDAT2      udata   0x000022       data   0x000001
                 DELAYDAT1      udata   0x000023       data   0x000001
-            .idata_main.o      idata   0x000080       data   0x000012
-           .udata_c018i.o      udata   0x000092       data   0x00000a
-                SEED_DATA      idata   0x00009c       data   0x000002
-          .idata___init.o      idata   0x00009e       data   0x000000
-          .udata___init.o      udata   0x00009e       data   0x000000
-             .idata_LCD.o      idata   0x00009e       data   0x000000
-             .udata_LCD.o      udata   0x00009e       data   0x000000
-          .idata_EEPROM.o      idata   0x00009e       data   0x000000
-          .udata_EEPROM.o      udata   0x00009e       data   0x000000
-            .udata_main.o      udata   0x00009e       data   0x000000
-           .idata_c018i.o      idata   0x00009e       data   0x000000
+            .idata_main.o      idata   0x000080       data   0x000018
+           .udata_c018i.o      udata   0x000098       data   0x00000a
+                SEED_DATA      idata   0x0000a2       data   0x000002
+          .idata___init.o      idata   0x0000a4       data   0x000000
+          .udata___init.o      udata   0x0000a4       data   0x000000
+             .idata_LCD.o      idata   0x0000a4       data   0x000000
+             .udata_LCD.o      udata   0x0000a4       data   0x000000
+          .idata_EEPROM.o      idata   0x0000a4       data   0x000000
+          .udata_EEPROM.o      udata   0x0000a4       data   0x000000
+            .udata_main.o      udata   0x0000a4       data   0x000000
+           .idata_c018i.o      idata   0x0000a4       data   0x000000
                    .stack      udata   0x000500       data   0x000100
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
@@ -59,86 +59,91 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x001f4b      
+                            0x000000    0x0021a7      
                             0x300001    0x300003      
                             0x300005    0x300006      
-            8017 out of 33048 program addresses used, program memory utilization is 24%
+            8621 out of 33048 program addresses used, program memory utilization is 26%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-              Address_set   0x000f64    program     extern D:\microchip_ping_pong_blank\LCD.c
-                   ClrScr   0x000e30    program     extern D:\microchip_ping_pong_blank\LCD.c
-                   D10K_1   0x001ea8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001eb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x001f32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001f2a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-             Delay10KTCYx   0x001e9c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x001f22    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                Disp_Line   0x0002a2    program     extern D:\microchip_ping_pong_blank\LCD.c
-                 Disp_Pic   0x000028    program     extern D:\microchip_ping_pong_blank\LCD.c
-                Disp_Text   0x000618    program     extern D:\microchip_ping_pong_blank\LCD.c
-              EEPROM_Read   0x001e0a    program     extern D:\microchip_ping_pong_blank\EEPROM.c
-             EEPROM_Write   0x001e2a    program     extern D:\microchip_ping_pong_blank\EEPROM.c
-                   Encode   0x001766    program     extern D:\microchip_ping_pong_blank\Encode.h
-                FONT_8x11   0x001136    program     extern D:\microchip_ping_pong_blank\FONT_8x11.h
-                 FXM1616U   0x001d30    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
-                 FXM2424U   0x001c9e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm2424u.asm
-                     Init   0x001870    program     extern D:\microchip_ping_pong_blank\main.c
-               Int_Handle   0x001846    program     extern D:\microchip_ping_pong_blank\main.c
-                 LCD_Init   0x00086c    program     extern D:\microchip_ping_pong_blank\LCD.c
-            Lcd_Write_Com   0x000e9e    program     extern D:\microchip_ping_pong_blank\LCD.c
-       Lcd_Write_Com_Data   0x000f30    program     extern D:\microchip_ping_pong_blank\LCD.c
-           Lcd_Write_Data   0x000efa    program     extern D:\microchip_ping_pong_blank\LCD.c
-                     Pant   0x00102a    program     extern D:\microchip_ping_pong_blank\LCD.c
-       _D10KTCYXCODE_0010   0x001eac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001eb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x001f2c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001f2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x001f30    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Address_set   0x000f64    program     extern D:\microchip_ping_pong\LCD.c
+                   ClrScr   0x000e30    program     extern D:\microchip_ping_pong\LCD.c
+                   D10K_1   0x0020fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00210a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0020fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x002188    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x002180    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+             Delay10KTCYx   0x0020f2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x002178    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                Disp_Line   0x0002a2    program     extern D:\microchip_ping_pong\LCD.c
+                 Disp_Pic   0x000028    program     extern D:\microchip_ping_pong\LCD.c
+                Disp_Text   0x000618    program     extern D:\microchip_ping_pong\LCD.c
+              EEPROM_Read   0x002060    program     extern D:\microchip_ping_pong\EEPROM.c
+             EEPROM_Write   0x002080    program     extern D:\microchip_ping_pong\EEPROM.c
+                   Encode   0x001766    program     extern D:\microchip_ping_pong\Encode.h
+                FONT_8x11   0x001136    program     extern D:\microchip_ping_pong\FONT_8x11.h
+                 FXM1616U   0x001f86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+                 FXM2424U   0x001ef4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm2424u.asm
+                     Init   0x001870    program     extern D:\microchip_ping_pong\main.c
+               Int_Handle   0x001846    program     extern D:\microchip_ping_pong\main.c
+                 LCD_Init   0x00086c    program     extern D:\microchip_ping_pong\LCD.c
+            Lcd_Write_Com   0x000e9e    program     extern D:\microchip_ping_pong\LCD.c
+       Lcd_Write_Com_Data   0x000f30    program     extern D:\microchip_ping_pong\LCD.c
+           Lcd_Write_Data   0x000efa    program     extern D:\microchip_ping_pong\LCD.c
+                     Pant   0x00102a    program     extern D:\microchip_ping_pong\LCD.c
+       _D10KTCYXCODE_0010   0x002102    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00210e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x002182    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x002184    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x002186    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
        ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00001   0x001f04    program     static                          
-       ___return_lbl00002   0x001e08    program     static                          
-               __config_0   0x300001    program     static D:\microchip_ping_pong_blank\main.c
-               __config_1   0x300002    program     static D:\microchip_ping_pong_blank\main.c
-               __config_2   0x300003    program     static D:\microchip_ping_pong_blank\main.c
-               __config_3   0x300005    program     static D:\microchip_ping_pong_blank\main.c
-               __config_4   0x300006    program     static D:\microchip_ping_pong_blank\main.c
+       ___return_lbl00001   0x00215a    program     static                          
+       ___return_lbl00002   0x00205e    program     static                          
+               __config_0   0x300001    program     static D:\microchip_ping_pong\main.c
+               __config_1   0x300002    program     static D:\microchip_ping_pong\main.c
+               __config_2   0x300003    program     static D:\microchip_ping_pong\main.c
+               __config_3   0x300005    program     static D:\microchip_ping_pong\main.c
+               __config_4   0x300006    program     static D:\microchip_ping_pong\main.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-            __zero_memory   0x001eca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                _do_cinit   0x001d6c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x002120    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                _do_cinit   0x001fc2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x001eea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-           buttonsHandler   0x001c54    program     extern D:\microchip_ping_pong_blank\main.c
-     changeUpRacketCoords   0x001afc    program     extern D:\microchip_ping_pong_blank\main.c
-            clearUpRacket   0x001a7a    program     extern D:\microchip_ping_pong_blank\main.c
-                compare_l   0x001ee0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                copy_loop   0x001dde    program     static                          
-            copy_one_byte   0x001de4    program     static                          
-                  delayms   0x0010d4    program     extern D:\microchip_ping_pong_blank\LCD.c
-                     done   0x001e08    program     static                          
-             done_copying   0x001df2    program     static                          
-              drawBorders   0x001926    program     extern D:\microchip_ping_pong_blank\main.c
-             drawUpRacket   0x0019f8    program     extern D:\microchip_ping_pong_blank\main.c
-                 high_ISR   0x000008    program     extern D:\microchip_ping_pong_blank\main.c
-                     jEnd   0x001f20    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x001f16    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-          lcd_write_color   0x000ed4    program     extern D:\microchip_ping_pong_blank\LCD.c
-                     loop   0x001efa    program     static                          
-                   loop_h   0x001ed8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x001ee2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     main   0x0018ec    program     extern D:\microchip_ping_pong_blank\main.c
-         moveUpRacketLeft   0x001c42    program     extern D:\microchip_ping_pong_blank\main.c
-        moveUpRacketRight   0x001c30    program     extern D:\microchip_ping_pong_blank\main.c
-                     rand   0x001e6e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
-                    srand   0x001e60    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
-                   strlen   0x001f06    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     test   0x001d86    program     static                          
-               zero_block   0x001ed8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 _startup   0x002140    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+           buttonsHandler   0x001eb2    program     extern D:\microchip_ping_pong\main.c
+   changeDownRacketCoords   0x001d5a    program     extern D:\microchip_ping_pong\main.c
+     changeUpRacketCoords   0x001afe    program     extern D:\microchip_ping_pong\main.c
+          clearDownRacket   0x001cd8    program     extern D:\microchip_ping_pong\main.c
+            clearUpRacket   0x001a7c    program     extern D:\microchip_ping_pong\main.c
+                compare_l   0x002136    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                copy_loop   0x002034    program     static                          
+            copy_one_byte   0x00203a    program     static                          
+                  delayms   0x0010d4    program     extern D:\microchip_ping_pong\LCD.c
+                     done   0x00205e    program     static                          
+             done_copying   0x002048    program     static                          
+              drawBorders   0x001928    program     extern D:\microchip_ping_pong\main.c
+           drawDownRacket   0x001c56    program     extern D:\microchip_ping_pong\main.c
+             drawUpRacket   0x0019fa    program     extern D:\microchip_ping_pong\main.c
+                 high_ISR   0x000008    program     extern D:\microchip_ping_pong\main.c
+                     jEnd   0x002176    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00216c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+          lcd_write_color   0x000ed4    program     extern D:\microchip_ping_pong\LCD.c
+                     loop   0x002150    program     static                          
+                   loop_h   0x00212e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x002138    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     main   0x0018ec    program     extern D:\microchip_ping_pong\main.c
+       moveDownRacketLeft   0x001ea0    program     extern D:\microchip_ping_pong\main.c
+      moveDownRacketRight   0x001e8e    program     extern D:\microchip_ping_pong\main.c
+         moveUpRacketLeft   0x001c44    program     extern D:\microchip_ping_pong\main.c
+        moveUpRacketRight   0x001c32    program     extern D:\microchip_ping_pong\main.c
+                     rand   0x0020c4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
+                    srand   0x0020b6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
+                   strlen   0x00215c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     test   0x001fdc    program     static                          
+               zero_block   0x00212e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -290,7 +295,7 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     Seed   0x00009c       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
+                     Seed   0x0000a2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -357,21 +362,24 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                  __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                  __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                  __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_0   0x000014       data     static D:\microchip_ping_pong_blank\LCD.c
-                  __tmp_0   0x000014       data     static D:\microchip_ping_pong_blank\main.c
-               colorBlack   0x000088       data     extern D:\microchip_ping_pong_blank\main.c
-               colorWhite   0x00008a       data     extern D:\microchip_ping_pong_blank\main.c
-                curr_byte   0x000095       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x000097       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x000099       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               downBorder   0x000086       data     extern D:\microchip_ping_pong_blank\main.c
-               leftBorder   0x000080       data     extern D:\microchip_ping_pong_blank\main.c
-                     prom   0x000092       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              rightBorder   0x000082       data     extern D:\microchip_ping_pong_blank\main.c
-                 upBorder   0x000084       data     extern D:\microchip_ping_pong_blank\main.c
-           upRacketCentre   0x00008c       data     extern D:\microchip_ping_pong_blank\main.c
-           upRacketIndent   0x00008e       data     extern D:\microchip_ping_pong_blank\main.c
-            upRacketWidth   0x000090       data     extern D:\microchip_ping_pong_blank\main.c
+                  __tmp_0   0x000014       data     static D:\microchip_ping_pong\main.c
+                  __tmp_0   0x000014       data     static D:\microchip_ping_pong\LCD.c
+               colorBlack   0x000088       data     extern D:\microchip_ping_pong\main.c
+               colorWhite   0x00008a       data     extern D:\microchip_ping_pong\main.c
+                curr_byte   0x00009b       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x00009d       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x00009f       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               downBorder   0x000086       data     extern D:\microchip_ping_pong\main.c
+         downRacketCentre   0x000092       data     extern D:\microchip_ping_pong\main.c
+         downRacketIndent   0x000094       data     extern D:\microchip_ping_pong\main.c
+          downRacketWidth   0x000096       data     extern D:\microchip_ping_pong\main.c
+               leftBorder   0x000080       data     extern D:\microchip_ping_pong\main.c
+                     prom   0x000098       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              rightBorder   0x000082       data     extern D:\microchip_ping_pong\main.c
+                 upBorder   0x000084       data     extern D:\microchip_ping_pong\main.c
+           upRacketCentre   0x00008c       data     extern D:\microchip_ping_pong\main.c
+           upRacketIndent   0x00008e       data     extern D:\microchip_ping_pong\main.c
+            upRacketWidth   0x000090       data     extern D:\microchip_ping_pong\main.c
 
 
 
@@ -381,73 +389,78 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                 high_ISR   0x000008    program     extern D:\microchip_ping_pong_blank\main.c
+                 high_ISR   0x000008    program     extern D:\microchip_ping_pong\main.c
        ___return_lbl00000   0x00000c    program     static                          
-                 Disp_Pic   0x000028    program     extern D:\microchip_ping_pong_blank\LCD.c
-                Disp_Line   0x0002a2    program     extern D:\microchip_ping_pong_blank\LCD.c
-                Disp_Text   0x000618    program     extern D:\microchip_ping_pong_blank\LCD.c
-                 LCD_Init   0x00086c    program     extern D:\microchip_ping_pong_blank\LCD.c
-                   ClrScr   0x000e30    program     extern D:\microchip_ping_pong_blank\LCD.c
-            Lcd_Write_Com   0x000e9e    program     extern D:\microchip_ping_pong_blank\LCD.c
-          lcd_write_color   0x000ed4    program     extern D:\microchip_ping_pong_blank\LCD.c
-           Lcd_Write_Data   0x000efa    program     extern D:\microchip_ping_pong_blank\LCD.c
-       Lcd_Write_Com_Data   0x000f30    program     extern D:\microchip_ping_pong_blank\LCD.c
-              Address_set   0x000f64    program     extern D:\microchip_ping_pong_blank\LCD.c
-                     Pant   0x00102a    program     extern D:\microchip_ping_pong_blank\LCD.c
-                  delayms   0x0010d4    program     extern D:\microchip_ping_pong_blank\LCD.c
-                FONT_8x11   0x001136    program     extern D:\microchip_ping_pong_blank\FONT_8x11.h
-                   Encode   0x001766    program     extern D:\microchip_ping_pong_blank\Encode.h
-               Int_Handle   0x001846    program     extern D:\microchip_ping_pong_blank\main.c
-                     Init   0x001870    program     extern D:\microchip_ping_pong_blank\main.c
-                     main   0x0018ec    program     extern D:\microchip_ping_pong_blank\main.c
-              drawBorders   0x001926    program     extern D:\microchip_ping_pong_blank\main.c
-             drawUpRacket   0x0019f8    program     extern D:\microchip_ping_pong_blank\main.c
-            clearUpRacket   0x001a7a    program     extern D:\microchip_ping_pong_blank\main.c
-     changeUpRacketCoords   0x001afc    program     extern D:\microchip_ping_pong_blank\main.c
-        moveUpRacketRight   0x001c30    program     extern D:\microchip_ping_pong_blank\main.c
-         moveUpRacketLeft   0x001c42    program     extern D:\microchip_ping_pong_blank\main.c
-           buttonsHandler   0x001c54    program     extern D:\microchip_ping_pong_blank\main.c
-                 FXM2424U   0x001c9e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm2424u.asm
-                 FXM1616U   0x001d30    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
-                _do_cinit   0x001d6c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x001d86    program     static                          
-                copy_loop   0x001dde    program     static                          
-            copy_one_byte   0x001de4    program     static                          
-             done_copying   0x001df2    program     static                          
-       ___return_lbl00002   0x001e08    program     static                          
-                     done   0x001e08    program     static                          
-              EEPROM_Read   0x001e0a    program     extern D:\microchip_ping_pong_blank\EEPROM.c
-             EEPROM_Write   0x001e2a    program     extern D:\microchip_ping_pong_blank\EEPROM.c
-                    srand   0x001e60    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
-                     rand   0x001e6e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
-             Delay10KTCYx   0x001e9c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x001ea8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x001eac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001eb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001eb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-            __zero_memory   0x001eca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               zero_block   0x001ed8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_h   0x001ed8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                compare_l   0x001ee0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x001ee2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 _startup   0x001eea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x001efa    program     static                          
-       ___return_lbl00001   0x001f04    program     static                          
-                   strlen   0x001f06    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x001f16    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x001f20    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-              Delay10TCYx   0x001f22    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001f2a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x001f2c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001f2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x001f30    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x001f32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-               __config_0   0x300001    program     static D:\microchip_ping_pong_blank\main.c
-               __config_1   0x300002    program     static D:\microchip_ping_pong_blank\main.c
-               __config_2   0x300003    program     static D:\microchip_ping_pong_blank\main.c
-               __config_3   0x300005    program     static D:\microchip_ping_pong_blank\main.c
-               __config_4   0x300006    program     static D:\microchip_ping_pong_blank\main.c
+                 Disp_Pic   0x000028    program     extern D:\microchip_ping_pong\LCD.c
+                Disp_Line   0x0002a2    program     extern D:\microchip_ping_pong\LCD.c
+                Disp_Text   0x000618    program     extern D:\microchip_ping_pong\LCD.c
+                 LCD_Init   0x00086c    program     extern D:\microchip_ping_pong\LCD.c
+                   ClrScr   0x000e30    program     extern D:\microchip_ping_pong\LCD.c
+            Lcd_Write_Com   0x000e9e    program     extern D:\microchip_ping_pong\LCD.c
+          lcd_write_color   0x000ed4    program     extern D:\microchip_ping_pong\LCD.c
+           Lcd_Write_Data   0x000efa    program     extern D:\microchip_ping_pong\LCD.c
+       Lcd_Write_Com_Data   0x000f30    program     extern D:\microchip_ping_pong\LCD.c
+              Address_set   0x000f64    program     extern D:\microchip_ping_pong\LCD.c
+                     Pant   0x00102a    program     extern D:\microchip_ping_pong\LCD.c
+                  delayms   0x0010d4    program     extern D:\microchip_ping_pong\LCD.c
+                FONT_8x11   0x001136    program     extern D:\microchip_ping_pong\FONT_8x11.h
+                   Encode   0x001766    program     extern D:\microchip_ping_pong\Encode.h
+               Int_Handle   0x001846    program     extern D:\microchip_ping_pong\main.c
+                     Init   0x001870    program     extern D:\microchip_ping_pong\main.c
+                     main   0x0018ec    program     extern D:\microchip_ping_pong\main.c
+              drawBorders   0x001928    program     extern D:\microchip_ping_pong\main.c
+             drawUpRacket   0x0019fa    program     extern D:\microchip_ping_pong\main.c
+            clearUpRacket   0x001a7c    program     extern D:\microchip_ping_pong\main.c
+     changeUpRacketCoords   0x001afe    program     extern D:\microchip_ping_pong\main.c
+        moveUpRacketRight   0x001c32    program     extern D:\microchip_ping_pong\main.c
+         moveUpRacketLeft   0x001c44    program     extern D:\microchip_ping_pong\main.c
+           drawDownRacket   0x001c56    program     extern D:\microchip_ping_pong\main.c
+          clearDownRacket   0x001cd8    program     extern D:\microchip_ping_pong\main.c
+   changeDownRacketCoords   0x001d5a    program     extern D:\microchip_ping_pong\main.c
+      moveDownRacketRight   0x001e8e    program     extern D:\microchip_ping_pong\main.c
+       moveDownRacketLeft   0x001ea0    program     extern D:\microchip_ping_pong\main.c
+           buttonsHandler   0x001eb2    program     extern D:\microchip_ping_pong\main.c
+                 FXM2424U   0x001ef4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm2424u.asm
+                 FXM1616U   0x001f86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+                _do_cinit   0x001fc2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x001fdc    program     static                          
+                copy_loop   0x002034    program     static                          
+            copy_one_byte   0x00203a    program     static                          
+             done_copying   0x002048    program     static                          
+       ___return_lbl00002   0x00205e    program     static                          
+                     done   0x00205e    program     static                          
+              EEPROM_Read   0x002060    program     extern D:\microchip_ping_pong\EEPROM.c
+             EEPROM_Write   0x002080    program     extern D:\microchip_ping_pong\EEPROM.c
+                    srand   0x0020b6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
+                     rand   0x0020c4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
+             Delay10KTCYx   0x0020f2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0020fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x0020fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x002102    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00210a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00210e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+            __zero_memory   0x002120    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               zero_block   0x00212e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_h   0x00212e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                compare_l   0x002136    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x002138    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 _startup   0x002140    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x002150    program     static                          
+       ___return_lbl00001   0x00215a    program     static                          
+                   strlen   0x00215c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00216c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x002176    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+              Delay10TCYx   0x002178    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x002180    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x002182    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x002184    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x002186    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x002188    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+               __config_0   0x300001    program     static D:\microchip_ping_pong\main.c
+               __config_1   0x300002    program     static D:\microchip_ping_pong\main.c
+               __config_2   0x300003    program     static D:\microchip_ping_pong\main.c
+               __config_3   0x300005    program     static D:\microchip_ping_pong\main.c
+               __config_4   0x300006    program     static D:\microchip_ping_pong\main.c
                      SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
@@ -474,24 +487,27 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                  __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                    __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                  __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_0   0x000014       data     static D:\microchip_ping_pong_blank\LCD.c
-                  __tmp_0   0x000014       data     static D:\microchip_ping_pong_blank\main.c
+                  __tmp_0   0x000014       data     static D:\microchip_ping_pong\main.c
+                  __tmp_0   0x000014       data     static D:\microchip_ping_pong\LCD.c
             DelayCounter2   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
             DelayCounter1   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-               leftBorder   0x000080       data     extern D:\microchip_ping_pong_blank\main.c
-              rightBorder   0x000082       data     extern D:\microchip_ping_pong_blank\main.c
-                 upBorder   0x000084       data     extern D:\microchip_ping_pong_blank\main.c
-               downBorder   0x000086       data     extern D:\microchip_ping_pong_blank\main.c
-               colorBlack   0x000088       data     extern D:\microchip_ping_pong_blank\main.c
-               colorWhite   0x00008a       data     extern D:\microchip_ping_pong_blank\main.c
-           upRacketCentre   0x00008c       data     extern D:\microchip_ping_pong_blank\main.c
-           upRacketIndent   0x00008e       data     extern D:\microchip_ping_pong_blank\main.c
-            upRacketWidth   0x000090       data     extern D:\microchip_ping_pong_blank\main.c
-                     prom   0x000092       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x000095       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x000097       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x000099       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     Seed   0x00009c       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
+               leftBorder   0x000080       data     extern D:\microchip_ping_pong\main.c
+              rightBorder   0x000082       data     extern D:\microchip_ping_pong\main.c
+                 upBorder   0x000084       data     extern D:\microchip_ping_pong\main.c
+               downBorder   0x000086       data     extern D:\microchip_ping_pong\main.c
+               colorBlack   0x000088       data     extern D:\microchip_ping_pong\main.c
+               colorWhite   0x00008a       data     extern D:\microchip_ping_pong\main.c
+           upRacketCentre   0x00008c       data     extern D:\microchip_ping_pong\main.c
+           upRacketIndent   0x00008e       data     extern D:\microchip_ping_pong\main.c
+            upRacketWidth   0x000090       data     extern D:\microchip_ping_pong\main.c
+         downRacketCentre   0x000092       data     extern D:\microchip_ping_pong\main.c
+         downRacketIndent   0x000094       data     extern D:\microchip_ping_pong\main.c
+          downRacketWidth   0x000096       data     extern D:\microchip_ping_pong\main.c
+                     prom   0x000098       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x00009b       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x00009d       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x00009f       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     Seed   0x0000a2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\rand.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -500,26 +516,26 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -528,26 +544,26 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                     TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -559,35 +575,35 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               ECCPASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ECCPAS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               ECCPASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
              ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -598,12 +614,12 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                     ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -628,8 +644,8 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -639,8 +655,8 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                  POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                       BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -663,16 +679,16 @@ Linker Map File - Created Wed Feb 08 23:19:10 2017
                   INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                        PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm

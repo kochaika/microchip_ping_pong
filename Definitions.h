@@ -23,6 +23,10 @@ extern unsigned int upRacketCentre = 120;
 extern unsigned int upRacketIndent = 5 + 5;
 extern unsigned int upRacketWidth = 35;
 
+extern unsigned int downRacketCentre = 120;
+extern unsigned int downRacketIndent = 315 - 5;
+extern unsigned int downRacketWidth = 35;
+
 extern unsigned int colorBlack = 0b0000000000000000;
 extern unsigned int colorWhite = 0b1111111111111111;
 
