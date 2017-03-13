@@ -12,6 +12,9 @@
 #pragma config LVP       = OFF          // Single-Supply ICSP disabled 
 #pragma config XINST     = OFF          // Instruction set extension and Indexed Addressing mode disabled (Legacy mode)          
 
+struct Coordinate ballCentre;
+unsigned int ballRaduis;
+
 unsigned int leftBorder;
 unsigned int rightBorder;
 unsigned int upBorder;
@@ -98,14 +101,17 @@ void Init(void)
 }
 
 //void newGame();
+void drawBall();
 void drawBorders();
 void drawUpRacket();
 void drawDownRacket();
 void buttonsHandler();
+void changeUpRacketCoords(int val);
+void changeDownRacketCoords(int val);
 
 void main (void)
 {
-	unsigned int black = 0b0000000000000000;
+	int dir = 1;
 	OSCCON = 0b01110010;
 	OSCTUNE = 0b01000000;
 	ADCON1 = 0b00001111;
@@ -114,11 +120,72 @@ void main (void)
 	drawBorders();
 	drawUpRacket();
 	drawDownRacket();
+	drawBall();
 	
 	while(1){
-	buttonsHandler();
+		buttonsHandler();
+		if(dir == 1)
+		{
+			if(moveBallDown()!=0)
+				dir = -1;
+		}
+		else
+		{
+			if(moveBallUp()!=0)
+				dir = 1;
+		}
+			
 	}
 
+}
+
+void clearBall()
+{
+	Disp_Line(	ballCentre.x - ballRaduis,
+				ballCentre.y - ballRaduis,
+				ballCentre.x + ballRaduis,
+				ballCentre.y + ballRaduis,
+				colorWhite);
+	Disp_Line(	ballCentre.x + ballRaduis,
+				ballCentre.y - ballRaduis,
+				ballCentre.x - ballRaduis,
+				ballCentre.y + ballRaduis,
+				colorWhite);				
+}
+
+
+void drawBall()
+{
+	Disp_Line(	ballCentre.x - ballRaduis,
+				ballCentre.y - ballRaduis,
+				ballCentre.x + ballRaduis,
+				ballCentre.y + ballRaduis,
+				colorBlack);
+	Disp_Line(	ballCentre.x + ballRaduis,
+				ballCentre.y - ballRaduis,
+				ballCentre.x - ballRaduis,
+				ballCentre.y + ballRaduis,
+				colorBlack);				
+}
+
+int moveBallDown()
+{
+	if(ballCentre.y >= downRacketIndent)
+		return -1;
+	clearBall();
+	ballCentre.y+=2;
+	drawBall();
+	return 0;
+}
+
+int moveBallUp()
+{
+	if(ballCentre.y <= upRacketIndent)
+		return -1;
+	clearBall();
+	ballCentre.y-=2;
+	drawBall();
+	return 0;
 }
 
 void drawBorders()  // границы дисплея

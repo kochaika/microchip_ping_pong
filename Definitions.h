@@ -14,6 +14,15 @@
 #define BUTTONS_PORT 	PORTB
 #define KEY_DELAY 7
 
+struct Coordinate
+{
+	unsigned int x;
+	unsigned int y;
+};
+
+extern struct Coordinate ballCentre = {120,160};
+extern unsigned int ballRaduis = 4;
+
 extern unsigned int leftBorder = 5;
 extern unsigned int rightBorder = 235; //240-5
 extern unsigned int upBorder = 5;

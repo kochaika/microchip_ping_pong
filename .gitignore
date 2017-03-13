@@ -220,3 +220,7 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.cof
+*.map
+ping_pong.map
+ping_pong.cof
