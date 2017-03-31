@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "LCD.h"
 #include "EEPROM.h"
+//#include "ballImg.h"
 
 #define EEPROM_ADDR     0
 #define BUTTONS_PORT 	PORTB

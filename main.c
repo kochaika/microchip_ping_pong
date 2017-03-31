@@ -1,4 +1,7 @@
 #include "Definitions.h"                // Подключение файла с определениями
+
+#include "ballImg.h"
+
 #pragma config OSC       = INTIO67      // Internal oscillator block, port function on RA6 and RA7
 #pragma config FCMEN     = OFF          // Fail-Safe Clock Monitor disabled
 #pragma config IESO      = OFF          // Internal/External Oscillator Switchover bit, Two-Speed Start-up is disabled in INTIO osc mode
@@ -117,6 +120,8 @@ void main (void)
 	ADCON1 = 0b00001111;
     Init();
 
+	
+	
 	drawBorders();
 	drawUpRacket();
 	drawDownRacket();
@@ -141,49 +146,31 @@ void main (void)
 
 void clearBall()
 {
-	Disp_Line(	ballCentre.x - ballRaduis,
-				ballCentre.y - ballRaduis,
-				ballCentre.x + ballRaduis,
-				ballCentre.y + ballRaduis,
-				colorWhite);
-	Disp_Line(	ballCentre.x + ballRaduis,
-				ballCentre.y - ballRaduis,
-				ballCentre.x - ballRaduis,
-				ballCentre.y + ballRaduis,
-				colorWhite);				
+	Disp_Pic (Image_ball_cl, ballCentre.x-5, ballCentre.y-5);			
 }
 
 
 void drawBall()
 {
-	Disp_Line(	ballCentre.x - ballRaduis,
-				ballCentre.y - ballRaduis,
-				ballCentre.x + ballRaduis,
-				ballCentre.y + ballRaduis,
-				colorBlack);
-	Disp_Line(	ballCentre.x + ballRaduis,
-				ballCentre.y - ballRaduis,
-				ballCentre.x - ballRaduis,
-				ballCentre.y + ballRaduis,
-				colorBlack);				
+	Disp_Pic (Image_ball, ballCentre.x-5, ballCentre.y-5);
 }
 
 int moveBallDown()
 {
-	if(ballCentre.y >= downRacketIndent)
+	if(ballCentre.y > downRacketIndent -6)
 		return -1;
 	clearBall();
-	ballCentre.y+=2;
+	ballCentre.y+=1;
 	drawBall();
 	return 0;
 }
 
 int moveBallUp()
 {
-	if(ballCentre.y <= upRacketIndent)
+	if(ballCentre.y < upRacketIndent + 7)
 		return -1;
 	clearBall();
-	ballCentre.y-=2;
+	ballCentre.y-=1;
 	drawBall();
 	return 0;
 }
