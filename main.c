@@ -15,6 +15,9 @@
 #pragma config LVP       = OFF          // Single-Supply ICSP disabled 
 #pragma config XINST     = OFF          // Instruction set extension and Indexed Addressing mode disabled (Legacy mode)          
 
+#define TMR0H_VAL 0xFD
+#define TMR0L_VAL 0xAA
+
 struct Coordinate ballCentre;
 unsigned int ballRaduis;
 
@@ -34,7 +37,19 @@ unsigned int downRacketCentre;
 unsigned int downRacketIndent;
 unsigned int downRacketWidth;
 
+volatile int dir = 1;
+
 void Int_Handle (void);
+void clearBall();
+void drawBall();
+void drawBorders();
+void drawUpRacket();
+void drawDownRacket();
+void buttonsHandler();
+void changeUpRacketCoords(int val);
+void changeDownRacketCoords(int val);
+int moveBallDown(unsigned int n);
+int moveBallUp(unsigned int n);
 
 #pragma code HIGH_INT_VECTOR = 0x8 // Код помещается в ячейку 0x08
 void high_ISR (void)
@@ -50,10 +65,21 @@ void Int_Handle (void)
 {
 	if (INTCONbits.TMR0IF == 1 && INTCONbits.TMR0IE == 1)
 	{
-		TMR0H = 0xE1; // Загрузка значения в старший байт 21
-		TMR0L = 0x7A; // Загрузка значения в младший байт
-		//secondsFromStart++;
-		//isNeedToWriteTime = 1;
+		TMR0H = TMR0H_VAL; // Загрузка значения в старший байт 21
+		TMR0L = TMR0L_VAL; // Загрузка значения в младший байт
+		clearBall();
+		if(dir == 1)
+		{
+			if(moveBallDown(10)!=0)
+				dir = -1;
+		}
+		else
+		{
+			if(moveBallUp(10)!=0)
+				dir = 1;
+		}
+		//isRedrawBall = 1;
+		drawBall();
 		INTCONbits.TMR0IF = 0; // Сброс флага прерывания Тimer0 24
 }
 	
@@ -96,32 +122,20 @@ void Init(void)
 	T0CONbits.T0PS2 = 1; // Задание коэффициента деления 1:256
 	T0CONbits.T0PS1 = 1;
 	T0CONbits.T0PS0 = 1;
-	TMR0H = 0xE1; // Загрузка значения в старший байт
-	TMR0L = 0x7A; // Загрузка значения в младший байт
+	TMR0H = TMR0H_VAL; // Загрузка значения в старший байт
+	TMR0L = TMR0L_VAL; // Загрузка значения в младший байт
 	
     LCD_Init ();	// Инициализация дисплея 
     return;
 }
 
-//void newGame();
-void drawBall();
-void drawBorders();
-void drawUpRacket();
-void drawDownRacket();
-void buttonsHandler();
-void changeUpRacketCoords(int val);
-void changeDownRacketCoords(int val);
-
 void main (void)
 {
-	int dir = 1;
 	OSCCON = 0b01110010;
 	OSCTUNE = 0b01000000;
 	ADCON1 = 0b00001111;
     Init();
 
-	
-	
 	drawBorders();
 	drawUpRacket();
 	drawDownRacket();
@@ -129,7 +143,11 @@ void main (void)
 	
 	while(1){
 		buttonsHandler();
-		if(dir == 1)
+		//if(isRedrawBall){
+		//	isRedrawBall = 0;
+		//	drawBall();
+		//}
+/*		if(dir == 1)
 		{
 			if(moveBallDown()!=0)
 				dir = -1;
@@ -139,6 +157,7 @@ void main (void)
 			if(moveBallUp()!=0)
 				dir = 1;
 		}
+*/
 			
 	}
 
@@ -155,24 +174,36 @@ void drawBall()
 	Disp_Pic (Image_ball, ballCentre.x-5, ballCentre.y-5);
 }
 
-int moveBallDown()
+int moveBallDown(unsigned int n)
 {
 	if(ballCentre.y > downRacketIndent -6)
 		return -1;
-	clearBall();
-	ballCentre.y+=1;
-	drawBall();
-	return 0;
+	//clearBall();
+	if(ballCentre.y + n > downRacketIndent -6){
+		ballCentre.y = downRacketIndent - 5;
+	}
+	else{
+		ballCentre.y+=n;
+		return 0;
+	}
+	//drawBall();
+	
 }
 
-int moveBallUp()
+int moveBallUp(unsigned int n)
 {
 	if(ballCentre.y < upRacketIndent + 7)
 		return -1;
-	clearBall();
-	ballCentre.y-=1;
-	drawBall();
-	return 0;
+	//clearBall();
+	if(ballCentre.y - n < upRacketIndent + 7){
+		ballCentre.y = upRacketIndent + 6;
+		return -1;
+	}
+	else{
+		ballCentre.y-=n;
+		return 0;
+	}
+	
 }
 
 void drawBorders()  // границы дисплея
